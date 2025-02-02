@@ -15,9 +15,7 @@
             $fact = $fact * $i;
         }
         echo "The factorial is " . $fact;
-
     }
     ?>
 </body>
-
 </html>
