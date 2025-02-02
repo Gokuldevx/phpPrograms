@@ -10,11 +10,21 @@
     <?php
     if (isset($_POST['submit'])) {
         $num = $_POST['num'];
-        $fact = 1;
-        for ($i = 1; $i <= $num; $i++) {
-            $fact = $fact * $i;
+        class Factorial {
+            function factorial($num){
+                $fact = 1;
+                for ($i = 1; $i <= $num; $i++) {
+                    $fact = $fact * $i;
+                }
+                return $fact;
+            }
         }
-        echo "The factorial is " . $fact;
+        
+        $obj = new Factorial();
+        $result = $obj->factorial($num);
+        echo "The factorial is ".$result;
+        
+        
     }
     ?>
 </body>
