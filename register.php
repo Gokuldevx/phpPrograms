@@ -59,7 +59,6 @@
         echo "Email : $email<br>";
         echo "Course : $course<br>";
         echo "Semester : $semester<br>";
-
     }
     ?>
 </body>
